@@ -9,6 +9,7 @@ Hedef IP adresine yönelik bir DDoS (Distributed Denial of Service - Dağıtılm
 
 ### Kurulum
 1.git clone https://github.com/yoskatr4/yoskAss-DDos.git
+
 2.cd yoskAss-DDos/
 
 ### Kullanım
