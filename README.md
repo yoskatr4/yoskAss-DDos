@@ -18,7 +18,7 @@ Hedef IP adresine yönelik bir DDoS (Distributed Denial of Service - Dağıtılm
 2. İstendiğinde hedef IP adresini girin.
 
 <pre>
-python main.py
+python3 main.py
 </pre>
 ### Sorumluluk Reddi
 
