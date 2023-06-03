@@ -7,10 +7,18 @@ Hedef IP adresine yönelik bir DDoS (Distributed Denial of Service - Dağıtılm
 
 - Python 3.x
 
+### Kurulum
+1.git clone https://github.com/yoskatr4/yoskAss-DDos.git
+2.cd yoskAss-DDos/
+
 ### Kullanım
 
 1. Script'i çalıştırın.
 2. İstendiğinde hedef IP adresini girin.
 
-```shell
-python ddos_attack.py
+<pre>
+python main.py
+</pre>
+### Sorumluluk Reddi
+
+Bu script sadece eğitim amaçlı sunulmuştur. Kullanımı tamamen size aittir ve olası kötüye kullanımlardan veya oluşabilecek zararlardan ben sorumlu değilim.
